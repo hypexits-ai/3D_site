@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Blender — материалы для учеников</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=JetBrains+Mono:wght@400;600&family=Pixelify+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { var t = localStorage.getItem("theme"); if (t && t !== "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/" aria-label="На главную">
+      <svg class="logo" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><g class="px-t"><rect x="7" y="1" width="2" height="1"/><rect x="5" y="2" width="6" height="1"/><rect x="3" y="3" width="10" height="1"/><rect x="1" y="4" width="14" height="1"/><rect x="3" y="5" width="10" height="1"/><rect x="5" y="6" width="6" height="1"/><rect x="7" y="7" width="2" height="1"/></g><g class="px-l"><rect x="1" y="6" width="2" height="1"/><rect x="1" y="7" width="4" height="1"/><rect x="1" y="8" width="6" height="1"/><rect x="1" y="9" width="6" height="1"/><rect x="1" y="10" width="6" height="1"/><rect x="1" y="11" width="6" height="1"/><rect x="2" y="12" width="5" height="1"/><rect x="4" y="13" width="3" height="1"/><rect x="6" y="14" width="1" height="1"/></g><g class="px-r"><rect x="13" y="6" width="2" height="1"/><rect x="11" y="7" width="4" height="1"/><rect x="9" y="8" width="6" height="1"/><rect x="9" y="9" width="6" height="1"/><rect x="9" y="10" width="6" height="1"/><rect x="9" y="11" width="6" height="1"/><rect x="9" y="12" width="5" height="1"/><rect x="9" y="13" width="3" height="1"/><rect x="9" y="14" width="1" height="1"/></g><g class="px-o"><rect x="7" y="0" width="2" height="1"/><rect x="5" y="1" width="2" height="1"/><rect x="9" y="1" width="2" height="1"/><rect x="3" y="2" width="2" height="1"/><rect x="11" y="2" width="2" height="1"/><rect x="1" y="3" width="2" height="1"/><rect x="13" y="3" width="2" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="15" y="4" width="1" height="1"/><rect x="0" y="5" width="3" height="1"/><rect x="13" y="5" width="3" height="1"/><rect x="0" y="6" width="1" height="1"/><rect x="3" y="6" width="2" height="1"/><rect x="11" y="6" width="2" height="1"/><rect x="15" y="6" width="1" height="1"/><rect x="0" y="7" width="1" height="1"/><rect x="5" y="7" width="2" height="1"/><rect x="9" y="7" width="2" height="1"/><rect x="15" y="7" width="1" height="1"/><rect x="0" y="8" width="1" height="1"/><rect x="7" y="8" width="2" height="1"/><rect x="15" y="8" width="1" height="1"/><rect x="0" y="9" width="1" height="1"/><rect x="7" y="9" width="2" height="1"/><rect x="15" y="9" width="1" height="1"/><rect x="0" y="10" width="1" height="1"/><rect x="7" y="10" width="2" height="1"/><rect x="15" y="10" width="1" height="1"/><rect x="0" y="11" width="1" height="1"/><rect x="7" y="11" width="2" height="1"/><rect x="15" y="11" width="1" height="1"/><rect x="0" y="12" width="2" height="1"/><rect x="7" y="12" width="2" height="1"/><rect x="14" y="12" width="2" height="1"/><rect x="2" y="13" width="2" height="1"/><rect x="7" y="13" width="2" height="1"/><rect x="12" y="13" width="2" height="1"/><rect x="4" y="14" width="2" height="1"/><rect x="7" y="14" width="2" height="1"/><rect x="10" y="14" width="2" height="1"/><rect x="6" y="15" width="4" height="1"/></g></svg>
+      <span class="brand-text">Blender<small>учебная страница</small></span>
+    </a>
+    <div class="themes" id="themes" role="group" aria-label="Цветовая схема"></div>
+  </div>
+</header>
+
+<main class="wrap" id="app" tabindex="-1">
+  <noscript><p class="note px">Чтобы сайт работал, включите JavaScript в браузере.</p></noscript>
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap">Учебные материалы по Blender для старшей и младшей групп</div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lb-inner">
+    <figure class="lb-fig px">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <div class="lb-bar">
+      <button class="btn" type="button" data-lb="prev" aria-label="Предыдущая картинка">←</button>
+      <span id="lbCount" class="lb-count"></span>
+      <button class="btn" type="button" data-lb="next" aria-label="Следующая картинка">→</button>
+      <button class="btn" type="button" data-lb="close" aria-label="Закрыть">✕ Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<script src="content.js"></script>
+<script src="hotkeys.js"></script>
+<script src="glossary.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
