@@ -135,6 +135,22 @@ window.VIDEOS = [
     title: "How to Texture in Blender", author: "Blender Guru" },
   { url: "https://youtu.be/QPh8h0hWkg0", group: "старшая",
     title: "Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part1", author: "Grant Abbitt (Gabbitt)" },
+
+  // Основы рендера
+  { url: "https://youtu.be/OUpHegF5KN4", group: "обе",
+    title: "Базовые настройки рендера в Blender" },
+  { url: "https://youtu.be/AuJMDdDqXVs", group: "обе",
+    title: "Basics of Rendering. Cycles vs. Eevee [Blender]" },
+  // Анимация для новичков
+  { url: "https://youtu.be/e0jFq0-oIfk", group: "обе",
+    title: "Blender анимация для новичков" },
+  { url: "https://youtu.be/YWhD_o4L8u0", group: "обе",
+    title: "Основы анимации в Blender 4.0" },
+  // Hard surface моделирование
+  { url: "https://youtu.be/j1gIztziq8E", group: "обе",
+    title: "Your FIRST Hard Surface Model in Blender (2026 Beginner Tutorial)" },
+  { url: "https://youtu.be/zxhaCD-Zlfw", group: "обе",
+    title: "Hard-Surface Modeling in Blender for Beginners (Full Course)", author: "Louis du Mont" },
 ];
 
 
@@ -161,4 +177,12 @@ window.REFERENCES = [
   { file: "nightstand",     group: "обе",     caption: "Деревянная тумбочка" },
   { file: "camera",         group: "старшая", caption: "Кинокамера" },
   { file: "boombox",        group: "старшая", caption: "Магнитофон" },
+  { file: "cannon",         group: "обе",     caption: "Пушка на колёсах" },
+  { file: "whale",          group: "обе",     caption: "Кит" },
+  { file: "tv",             group: "обе",     caption: "Ретро-телевизор с антенной" },
+  { file: "stilt-house",    group: "обе",     caption: "Домик на сваях и лодка" },
+  { file: "milk",           group: "обе",     caption: "Пакет и бутылка молока" },
+  { file: "radar",          group: "младшая", caption: "Спутниковая тарелка" },
+  { file: "remote",         group: "младшая", caption: "Пульт от телевизора" },
+  { file: "satellite",      group: "младшая", caption: "Спутник с солнечными панелями" },
 ];
